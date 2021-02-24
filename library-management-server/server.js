@@ -11,7 +11,8 @@ app.use(cors());
 var mockDataController = require('./mockDataController');
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  var helloworld = {"Hello": "World"};
+  res.send(helloworld)
 });
 
 app.get('/api/books/list', mockDataController.getListOfBooks);

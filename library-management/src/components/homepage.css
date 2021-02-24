@@ -1,0 +1,14 @@
+.tabs > a {
+    font-weight: bolder;
+    background-color: #fab920;
+    color: black;
+    border: solid 1px #e08d4a !important;
+}
+
+.tabs > a.active {
+    color: #2098fa !important;
+    background-color: #2e2e2e !important;
+    -webkit-animation: shadow-pop-br 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-br 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+  
