@@ -11,7 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/pniyongabo/LibraryManagementWebService.git"
   },
-  "author": "",
+  "author": {
+    "name": "Patrick Niyongabo, Xavier Reed, Huy Doan"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pniyongabo/LibraryManagementWebService/issues"
