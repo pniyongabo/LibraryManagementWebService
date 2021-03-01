@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "e2ad2c76-7755-4a74-84a5-e5322bcac04f",
+		"name": "OpenLIbrary",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "works/OL45883W.json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://openlibrary.org/works/OL45883W.json",
+					"protocol": "https",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"works",
+						"OL45883W.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "books?bibkeys=ISBN:0451526538",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://openlibrary.org/api/books?bibkeys=ISBN:0451526538.json",
+					"protocol": "https",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"api",
+						"books"
+					],
+					"query": [
+						{
+							"key": "bibkeys",
+							"value": "ISBN:0451526538.json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search lists of books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://openlibrary.org/search/lists.json?q=book&limit=20&offset=0",
+					"protocol": "http",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"search",
+						"lists.json"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "book"
+						},
+						{
+							"key": "limit",
+							"value": "20"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list gen info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://openlibrary.org/people/libraryacc112233/lists/OL191725L.json",
+					"protocol": "http",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"people",
+						"libraryacc112233",
+						"lists",
+						"OL191725L.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authors/OL34184A.json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://openlibrary.org/authors/OL34184A.json",
+					"protocol": "https",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"authors",
+						"OL34184A.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

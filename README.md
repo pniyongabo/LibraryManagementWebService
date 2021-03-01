@@ -10,7 +10,7 @@ A library management web service that maintains and organizes a user’s library
 
 This is a MERN (MongoDB, Express JS, React JS, and Node JS) web service for a library management system.
 
-#### features
+### Features
 * Show availability: List and browse the books available to checkout from the library.
 * Sorting:  Sort library books based on author, publish date, date added, etc.
 * Grouping: Groups books into user-created lists (e.g. “To-read”).
