@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 
-const basePathToData = path.join(__dirname, 'mockdata');
+const basePathToData = path.join(__dirname, 'helperdata');
 
 const getJsonData = function (basePathToData, filename) {
   var filename = path.join(basePathToData, filename);
