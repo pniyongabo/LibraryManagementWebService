@@ -35,6 +35,7 @@ cd library-management
 npm install
 npm start
 ```
+If the `npm install` command fails, try running `npm install --legacy-peer-deps`.
 
 
 

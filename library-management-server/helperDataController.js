@@ -12,3 +12,8 @@ exports.getListOfBooks = function (request, response) {
   var data = getJsonData(basePathToData, 'book_list_example_one.json');
   return response.send(data);
 };
+
+exports.getCompleteListOfBooks = function (request, response) {
+  var data = getJsonData(basePathToData, 'book_list_example_two.json');
+  return response.send(data);
+};

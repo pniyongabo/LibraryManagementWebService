@@ -17,6 +17,8 @@ app.get('/', (req, res) => {
 
 app.get('/api/books/list', helperDataController.getListOfBooks);
 
+app.get('/api/books/completelist', helperDataController.getCompleteListOfBooks);
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`)
 });

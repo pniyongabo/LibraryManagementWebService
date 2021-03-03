@@ -66,7 +66,6 @@ export default class App extends Component {
             </Route>
             <Route path="/">
               <Homepage />
-              <BookList data={books} />
             </Route>
 
             <Route render={() => <Redirect to="/" />} />
