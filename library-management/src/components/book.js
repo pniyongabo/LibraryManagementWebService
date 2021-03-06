@@ -9,28 +9,41 @@ export default class Book extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoaded: false,
-      bookDetails: {}
+      isLoaded: false
     }
   }
   
   componentDidMount() {
-    this.setState({ 
-      isbn: this.props.match.params.isbn,
-      isLoaded: true
-    })  
+    this.getBookDetails(this.props.match.params.isbn)
+      .then(res => this.setState({ 
+        bookDetails: res,
+        isbn: this.props.match.params.isbn,
+        isLoaded: true
+      }))
+    .catch(err => console.log(err));
+  }
+  
+  getBookDetails = async (isbn) => {
+      const response = await fetch('/api/books/mappings');
+        
+        const body = await response.json();
+        
+        if (response.status !== 200) {
+          return ""; 
+        }
+        
+        return body[isbn];
+
   }
   
   load_data = () => {
-    console.log(this.props);
-    console.log(this.state);
-    const bookCover = `http://covers.openlibrary.org/b/isbn/${this.state.isbn}-M.jpg?default=false`
-    //const bookCover = this.state.bookDetails.thumbnailUrl;
-    const bookCoverALT = "Book cover of: " + this.state.bookDetails.title;
+    const bookCover = `http://covers.openlibrary.org/b/isbn/${this.state.isbn}-L.jpg?default=false`
+    const bookCoverALT = "Book cover of: " + this.state.isbn;
     return(
       <div>
         <div>
           <img src={bookCover} alt={bookCoverALT}/>
+          <p>{this.state.bookDetails}</p>
         </div>
       </div>
        )

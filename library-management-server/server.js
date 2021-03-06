@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
 app.get("/api/authors/list", helperDataController.getListOfBooks);
 app.get('/api/books/list', helperDataController.getListOfBooks);
 app.get('/api/books/completelist', helperDataController.getCompleteListOfBooks);
+app.get('/api/books/mappings', helperDataController.getBooksMappings);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);
