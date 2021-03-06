@@ -21,6 +21,6 @@ exports.getListOfAuthors = function (request, response) {
 
 
 exports.getCompleteListOfBooks = function (request, response) {
-  var data = getJsonData(basePathToData, 'book_list_example_two.json');
+  var data = getJsonData(basePathToData, "books.json");
   return response.send(data);
 };

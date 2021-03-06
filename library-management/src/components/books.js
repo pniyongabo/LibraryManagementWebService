@@ -58,17 +58,19 @@ export default class Books extends Component {
       // Book covers code as an example using OpenLibrary
       // Notice 'item.isbn' does not work except for very few cases (isbn data is faulty)
       var theLink = `http://covers.openlibrary.org/b/isbn/${item.isbn}-S.jpg?default=false`
+      // var theLink = item.thumbnailUrl;
       currentRow["cover"] = <img src={theLink}/>
 
       currentRow["title"] = item.title;
-      currentRow["author"] = item.author;
-      currentRow["published"] = item.published;
-      currentRow["publisher"] = item.publisher;
-      currentRow["pages"] = item.pages;
+      currentRow["authors"] = item.authors.join(", ");
+      var publishedObject = item.hasOwnProperty("publishedDate") ? item.publishedDate : {};
+      // currentRow["published"] = publishedObject["$date"];
+      currentRow["published"] = publishedObject !== {} ? new Date(publishedObject.$date).toLocaleString() : "";
+      currentRow["categories"] = item.categories.join(", ");
+      currentRow["pages"] = item.pageCount;
       currentRow["isbn"] = item.isbn;
-      currentRow["isbn13"] = item.isbn13;
       
-      currentRow["clickEvent"] = () => this.goToPlayerPage(item.goodreadsid);
+      currentRow["clickEvent"] = () => this.goToPlayerPage(item.isbn);
       
       return currentRow; 
     });
@@ -85,8 +87,8 @@ export default class Books extends Component {
               sort: 'asc'
             },
             {
-              label: 'Author',
-              field: 'author',
+              label: 'Authors',
+              field: 'authors',
               sort: 'asc'
             },
             {
@@ -95,8 +97,8 @@ export default class Books extends Component {
               sort: 'asc'
             },
             {
-              label: 'Publisher',
-              field: 'publisher',
+              label: 'Categories',
+              field: 'categories',
               sort: 'asc'
             },
             {
@@ -107,11 +109,6 @@ export default class Books extends Component {
             {
               label: 'ISBN',
               field: 'isbn',
-              sort: 'asc'
-            },
-            {
-              label: 'ISBN13',
-              field: 'isbn13',
               sort: 'asc'
             }
           ];
