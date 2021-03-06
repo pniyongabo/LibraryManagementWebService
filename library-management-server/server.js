@@ -15,15 +15,10 @@ app.get("/", (req, res) => {
   res.send(helloworld);
 });
 
-<<<<<<< HEAD
-app.get("/api/books/list", helperDataController.getListOfBooks);
 app.get("/api/authors/list", helperDataController.getListOfBooks);
-=======
 app.get('/api/books/list', helperDataController.getListOfBooks);
-
 app.get('/api/books/completelist', helperDataController.getCompleteListOfBooks);
 
->>>>>>> 1bef0d11b24ca5ba58e87bf21bfd477d249926e7
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);
 });

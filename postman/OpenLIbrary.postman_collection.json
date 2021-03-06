@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e2ad2c76-7755-4a74-84a5-e5322bcac04f",
+		"_postman_id": "cd1079d6-ac16-492d-915c-446ec47d0feb",
 		"name": "OpenLIbrary",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -122,6 +122,96 @@
 					"path": [
 						"authors",
 						"OL34184A.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lists by user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://openlibrary.org/people/JDCarrr99/lists.json",
+					"protocol": "http",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"people",
+						"JDCarrr99",
+						"lists.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list editions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://openlibrary.org/people/sionnac/lists/OL25152L/editions.json?limit=2",
+					"protocol": "https",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"people",
+						"sionnac",
+						"lists",
+						"OL25152L",
+						"editions.json"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "isbn/1880418533.json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://openlibrary.org/isbn/1933988452.json",
+					"protocol": "https",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"isbn",
+						"1933988452.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authors/OL2162284A.json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://openlibrary.org/authors/OL6855931A.json",
+					"protocol": "https",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"authors",
+						"OL6855931A.json"
 					]
 				}
 			},
