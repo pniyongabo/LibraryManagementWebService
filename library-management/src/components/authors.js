@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import "./authors.css";
-<<<<<<< HEAD
 import { MDBDataTable } from "mdbreact";
-=======
 
-import book_logo from "../assets/book_logo_black.png";
-import book_logo2 from "../assets/logo2.png";
->>>>>>> 1bef0d11b24ca5ba58e87bf21bfd477d249926e7
 import Sidebar from "./sidebar";
 import Header from "./header";
 export default class Authors extends Component {
@@ -15,20 +10,57 @@ export default class Authors extends Component {
     this.state = {
       authors: {},
       isLoaded: false,
+      names: [],
     };
   }
 
   componentDidMount() {
     this.getAllAuthors()
-      .then((res1) =>
-        this.load_data(res1.books).then((res3) => {
-          this.setState({
-            authors: res3,
-            isLoaded: true,
+      .then((res1) => {
+        this.get_isbn(res1.books)
+          .then((res3) => {
+            this.load_data1(res3).then((res4) => {
+              this.setState({
+                names: res4,
+              });
+            });
+            var urlArray = [];
+            if (res3.length > 0) {
+              res3.map((data) => {
+                urlArray.push(data);
+              });
+            }
+            return urlArray;
+          })
+          .then((res4) => {
+            return Promise.all(
+              res4.map((data) => {
+                return fetch(data.isbn).then((res) => res.json());
+              })
+            );
+          })
+          .then((res) => {
+            console.log(res);
+            var objArray = res;
+            return objArray;
+          })
+          .then((res) => {
+            var authorURL = [];
+            res.map((data) => {
+              authorURL.push(data.authors);
+            });
+            return authorURL;
+          })
+          .then((res) => {
+            this.load_data(res).then((res4) => {
+              this.setState({
+                authors: res4,
+                isLoaded: true,
+              });
+            });
           });
-          console.log(this.state.authors);
-        })
-      )
+      })
+
       .catch((error) => console.log(error));
   }
 
@@ -46,11 +78,12 @@ export default class Authors extends Component {
     }
     return body;
   };
+
   getAuthors = async (isbn) => {
-    const response = await fetch(`https://openlibrary.org/isbn/${isbn}.json`, {
+    const response = await fetch(isbn, {
       method: "GET",
     });
-    const body = await response.json();
+    const body = response.json();
 
     if (response.status !== 200) {
       throw Error(body.message);
@@ -59,20 +92,39 @@ export default class Authors extends Component {
   };
 
   goToAuthorPage = (id) => {
-    window.location.assign("/authors/" + id);
+    window.location.assign(id);
+  };
+  get_isbn = async (rawData) => {
+    const isbnData = rawData.map((item, i) => {
+      var currentRow = {};
+      currentRow["name"] = item.author;
+      currentRow["isbn"] = `https://openlibrary.org/isbn/${item.isbn}.json`;
+
+      return currentRow;
+    });
+
+    return isbnData;
   };
 
+  load_data1 = async (rawData) => {
+    const dataRows = rawData.map((item, i) => {
+      var currentRow = {};
+      currentRow["name"] = item.name;
+      return currentRow;
+    });
+
+    return dataRows;
+  };
   load_data = async (rawData) => {
     const dataRows = rawData.map((item, i) => {
       var currentRow = {};
-      currentRow["name"] = item.author;
-      this.getAuthors(item.isbn).then((res1) => {
-        if (res1.authors) {
-          currentRow["link"] = res1.authors[0].key;
-        }
-      });
-
-      currentRow["clickEvent"] = () => this.goToAuthorPage(item.author);
+      currentRow["name"] = this.state.names[i].name;
+      if (item) {
+        currentRow["link"] = item[0].key;
+        currentRow["clickEvent"] = () => this.goToAuthorPage(item[0].key);
+      } else {
+        currentRow["link"] = "";
+      }
 
       return currentRow;
     });
@@ -106,7 +158,6 @@ export default class Authors extends Component {
       );
     }
     return (
-<<<<<<< HEAD
       <div className="align-center">
         <Header />
         <h1>Authors Page</h1>
@@ -118,20 +169,6 @@ export default class Authors extends Component {
               responsive
               data={this.state.authors}
             />
-=======
-      <div className="title">
-        <div className="jumbotron">
-          <img
-            className="d-inline-block img-fluid logo"
-            src={book_logo2}
-            alt="logo"
-            height="auto"
-            width="13%"
-          />
-          <h1 className="d-inline-block display-2 title_text">Authors Page</h1>
-          <div className="col-2">
-            <Sidebar />
->>>>>>> 1bef0d11b24ca5ba58e87bf21bfd477d249926e7
           </div>
         </div>
 
