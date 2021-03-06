@@ -44,8 +44,8 @@ export default class Books extends Component {
 
   }
   
-  goToBookPage = (id) => {
-    window.location.assign('/books/bookId/'+id);
+  goToBookPage = (isbn) => {
+    window.location.assign('/book/' + isbn);
   }
   
   load_data = async (rawData) => {
@@ -70,7 +70,7 @@ export default class Books extends Component {
       currentRow["pages"] = item.pageCount;
       currentRow["isbn"] = item.isbn;
       
-      currentRow["clickEvent"] = () => this.goToPlayerPage(item.isbn);
+      currentRow["clickEvent"] = () => this.goToBookPage(item.isbn);
       
       return currentRow; 
     });
