@@ -1,0 +1,10 @@
+.dataTables_wrapper .table tbody tr td:nth-child(1) {
+  cursor: pointer !important;
+  color: blue !important;
+  text-decoration: underline !important;
+}
+
+.dataTables_wrapper .table tbody tr td:nth-child(1):hover {
+  text-decoration: none !important;
+  text-shadow: 1px 1px 1px #555 !important;
+}

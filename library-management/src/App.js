@@ -5,7 +5,7 @@ import Books from "./components/books";
 import Authors from "./components/authors";
 import Genres from "./components/genres";
 import Loans from "./components/loans";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
   Switch,
