@@ -55,8 +55,11 @@ export default class Books extends Component {
     const dataRows = rawData.map((item, i) => {
       var currentRow = {};
       
-      // add book cover
-      
+      // Book covers code as an example using OpenLibrary
+      // Notice 'item.isbn' does not work except for very few cases (isbn data is faulty)
+      var theLink = `http://covers.openlibrary.org/b/isbn/${item.isbn}-S.jpg?default=false`
+      currentRow["cover"] = <img src={theLink}/>
+
       currentRow["title"] = item.title;
       currentRow["author"] = item.author;
       currentRow["published"] = item.published;
@@ -71,6 +74,11 @@ export default class Books extends Component {
     });
     
     const dataColumns = [
+            {
+              label: 'Cover',
+              field: 'cover',
+              sort: 'asc'
+            },
             {
               label: 'Title',
               field: 'title',
