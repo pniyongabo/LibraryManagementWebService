@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./authors.css";
 import { MDBDataTable } from "mdbreact";
 
+import book_logo from "../assets/book_logo_black.png";
+import book_logo2 from "../assets/logo2.png";
+
 import Sidebar from "./sidebar";
 import Header from "./header";
 export default class Authors extends Component {

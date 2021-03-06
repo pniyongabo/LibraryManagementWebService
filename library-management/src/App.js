@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Homepage from "./components/homepage";
 import Books from "./components/books";
+import Book from "./components/book";
 import Authors from "./components/authors";
 import Genres from "./components/genres";
 import Loans from "./components/loans";
@@ -55,6 +56,12 @@ export default class App extends Component {
             <Route path="/books">
               <Books />
             </Route>
+            <Route path="/book/:isbn"
+              exact
+              render={(props) => (
+                <Book {...props} />
+              )}
+            />
             <Route path="/authors">
               <Authors />
             </Route>
