@@ -6,8 +6,11 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
+<<<<<<< HEAD
     "boostrap": "^2.0.0",
     "bootstrap": "^3.4.1",
+=======
+>>>>>>> 1bef0d11b24ca5ba58e87bf21bfd477d249926e7
     "mdbreact": "^5.0.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.0",

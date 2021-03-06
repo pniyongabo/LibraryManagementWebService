@@ -3,6 +3,7 @@ import { Tab, Tabs } from "react-bootstrap";
 
 import Sidebar from "./sidebar";
 import Header from "./header";
+import Books from "./books";
 
 import "./homepage.css";
 
@@ -12,11 +13,7 @@ export default class Homepage extends Component {
   render() {
     return (
       <div>
-        <Header />
-
-        <div className="col-2">
-          <Sidebar />
-        </div>
+        <Books />
       </div>
     );
   }

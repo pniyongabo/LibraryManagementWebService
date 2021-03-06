@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./loans.css";
 
 import book_logo from "../assets/book_logo_black.png";
+import book_logo2 from "../assets/logo2.png";
 import Sidebar from "./sidebar";
 export default class Loans extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class Loans extends Component {
         <div className="jumbotron">
           <img
             className="d-inline-block img-fluid logo"
-            src={book_logo}
+            src={book_logo2}
             alt="logo"
             height="auto"
             width="13%"

@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import "./authors.css";
+<<<<<<< HEAD
 import { MDBDataTable } from "mdbreact";
+=======
+
+import book_logo from "../assets/book_logo_black.png";
+import book_logo2 from "../assets/logo2.png";
+>>>>>>> 1bef0d11b24ca5ba58e87bf21bfd477d249926e7
 import Sidebar from "./sidebar";
 import Header from "./header";
 export default class Authors extends Component {
@@ -100,6 +106,7 @@ export default class Authors extends Component {
       );
     }
     return (
+<<<<<<< HEAD
       <div className="align-center">
         <Header />
         <h1>Authors Page</h1>
@@ -111,6 +118,20 @@ export default class Authors extends Component {
               responsive
               data={this.state.authors}
             />
+=======
+      <div className="title">
+        <div className="jumbotron">
+          <img
+            className="d-inline-block img-fluid logo"
+            src={book_logo2}
+            alt="logo"
+            height="auto"
+            width="13%"
+          />
+          <h1 className="d-inline-block display-2 title_text">Authors Page</h1>
+          <div className="col-2">
+            <Sidebar />
+>>>>>>> 1bef0d11b24ca5ba58e87bf21bfd477d249926e7
           </div>
         </div>
 
