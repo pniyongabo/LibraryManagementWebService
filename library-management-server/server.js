@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
   res.send(helloworld);
 });
 
-app.get("/api/authors/list", helperDataController.getListOfBooks);
+app.get("/api/authors/list", helperDataController.getListOfAuthors);
 app.get("/api/books/list", helperDataController.getListOfBooks);
 app.get("/api/books/completelist", helperDataController.getCompleteListOfBooks);
 app.get("/api/books/mappings", helperDataController.getBooksMappings);

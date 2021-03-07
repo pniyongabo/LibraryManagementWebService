@@ -15,21 +15,19 @@ export default class Author extends Component {
 
   componentDidMount() {
     this.getAuthorDetails(this.props.match.params.id)
-      .then((res1) =>
+      .then((res1) => {
+        console.log(res1);
         this.setState({
-          authorDetails: res1.api.author[0],
+          authorDetails: res1,
           authorDetailsLoaded: true,
-        })
-      )
+        });
+      })
       .catch((err) => console.log(err));
   }
 
   getAuthorDetails = async (id) => {
-    const response = await fetch("https://openlibrary.org/authors/" + id, {
+    const response = await fetch(`https://openlibrary.org/authors/${id}.json`, {
       method: "GET",
-      headers: {
-        "x-rapidapi-key": process.env.REACT_APP_API_KEY,
-      },
     });
 
     const body = await response.json();
@@ -41,12 +39,22 @@ export default class Author extends Component {
     return body;
   };
 
-  load_data = () => {
+  load_data = (id) => {
+    var bio = "No information";
+    const authorImage = `http://covers.openlibrary.org/a/olid/${id}-M.jpg`;
+    const authorImageALT = "Image of Author " + this.state.authorDetails.name;
+    if (this.state.authorDetails.bio) {
+      bio = this.state.authorDetails.bio.value;
+    }
     return (
       <div>
+        <div>
+          <img src={authorImage} alt={authorImageALT} />
+        </div>
         <div className="author-info">
           <h1>{this.state.authorDetails.name}</h1>
-          <h6>Birthdate: {this.state.author.year}</h6>
+          <p>{this.state.authorDetails.birth_date}</p>
+          <p className="bio">{bio}</p>
         </div>
       </div>
     );
@@ -64,8 +72,8 @@ export default class Author extends Component {
     return (
       <div>
         <Header />
-        <div className="align-center">
-          {this.load_data(this.state.data)}
+        <div className="mx-auto">
+          {this.load_data(this.props.match.params.id)}
           <Sidebar />
         </div>
       </div>

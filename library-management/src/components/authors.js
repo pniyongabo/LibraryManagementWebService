@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import "./authors.css";
 import { MDBDataTable } from "mdbreact";
 
-import book_logo from "../assets/book_logo_black.png";
-import book_logo2 from "../assets/logo2.png";
-
 import Sidebar from "./sidebar";
 import Header from "./header";
 export default class Authors extends Component {
@@ -23,8 +20,9 @@ export default class Authors extends Component {
         this.get_isbn(res1.books)
           .then((res3) => {
             this.load_data1(res3).then((res4) => {
+              let uniqeArray = [...new Set(res4)];
               this.setState({
-                names: res4,
+                names: uniqeArray,
               });
             });
             var urlArray = [];

@@ -14,7 +14,7 @@ exports.getListOfBooks = function (request, response) {
 };
 
 exports.getListOfAuthors = function (request, response) {
-  var data = getJsonData(basePathToData, "book_list_example_two.json");
+  var data = getJsonData(basePathToData, "book_list_example_one.json");
   return response.send(data);
 };
 

@@ -6,6 +6,7 @@ import Book from "./components/book";
 import Authors from "./components/authors";
 import Genres from "./components/genres";
 import Loans from "./components/loans";
+import Author from "./components/author";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
@@ -56,15 +57,17 @@ export default class App extends Component {
             <Route path="/books">
               <Books />
             </Route>
-            <Route path="/book/:isbn"
+            <Route
+              path="/book/:isbn"
               exact
-              render={(props) => (
-                <Book {...props} />
-              )}
+              render={(props) => <Book {...props} />}
             />
-            <Route path="/authors">
-              <Authors />
-            </Route>
+            <Route path="/authors" exact render={(props) => <Authors />} />
+            <Route
+              path="/authors/:id"
+              exact
+              render={(props) => <Author {...props} />}
+            />
             <Route path="/genres">
               <Genres></Genres>
             </Route>

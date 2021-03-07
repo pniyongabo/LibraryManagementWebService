@@ -1,4 +1,8 @@
-.player-info {
+.author-info {
   font-family: Palatino, Cambria, Helvetica, Haettenschweiler,
     "Arial Narrow Bold", sans-serif;
+  margin-left: 10px;
+}
+.bio {
+  margin-right: 70px;
 }
