@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { MDBataTable } from 'mdbreact';
-import "./genres.css";
+import "./categories.css";
 import Header from "./header"
 
 import book_logo from "../assets/book_logo_black.png";

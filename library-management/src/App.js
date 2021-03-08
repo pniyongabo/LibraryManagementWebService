@@ -4,7 +4,7 @@ import Homepage from "./components/homepage";
 import Books from "./components/books";
 import Book from "./components/book";
 import Authors from "./components/authors";
-import Genres from "./components/genres";
+import Categories from "./components/categories";
 import Loans from "./components/loans";
 import Author from "./components/author";
 import Users from "./components/users";
@@ -69,8 +69,8 @@ export default class App extends Component {
               exact
               render={(props) => <Author {...props} />}
             />
-            <Route path="/genres">
-              <Genres></Genres>
+            <Route path="/categories">
+              <Categories></Categories>
             </Route>
             <Route path="/loans">
               <Loans />
