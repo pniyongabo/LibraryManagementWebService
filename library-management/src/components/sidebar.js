@@ -43,6 +43,12 @@ export default class Sidebar extends Component {
             <a href="/loans">Loans</a>
           </div>
         </div>
+        <div className="row">
+          <div className="col-2"></div>
+          <div className="col-3">
+            <a href="/users">Users</a>
+          </div>
+        </div>
       </div>
     );
   }

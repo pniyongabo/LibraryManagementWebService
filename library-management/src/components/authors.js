@@ -17,7 +17,7 @@ export default class Authors extends Component {
   componentDidMount() {
     this.getAllAuthors()
       .then((res1) => {
-        this.get_isbn(res1.books)
+        this.get_isbn(res1)
           .then((res3) => {
             this.load_data1(res3).then((res4) => {
               let uniqeArray = [...new Set(res4)];
@@ -36,23 +36,35 @@ export default class Authors extends Component {
           .then((res4) => {
             return Promise.all(
               res4.map((data) => {
-                return fetch(data.isbn).then((res) => res.json());
+                return fetch(data.isbn)
+                  .then((res) => res.json())
+                  .catch((error) => {
+                    console.log(error);
+                  });
               })
             );
           })
           .then((res) => {
-            console.log(res);
             var objArray = res;
             return objArray;
           })
           .then((res) => {
             var authorURL = [];
             res.map((data) => {
-              authorURL.push(data.authors);
+              if (data) {
+                if (data.authors) {
+                  authorURL.push(data.authors);
+                } else {
+                  authorURL.push("");
+                }
+              } else {
+                authorURL.push("");
+              }
             });
             return authorURL;
           })
           .then((res) => {
+            console.log(res);
             this.load_data(res).then((res4) => {
               this.setState({
                 authors: res4,
@@ -98,7 +110,7 @@ export default class Authors extends Component {
   get_isbn = async (rawData) => {
     const isbnData = rawData.map((item, i) => {
       var currentRow = {};
-      currentRow["name"] = item.author;
+      currentRow["name"] = item.authors[0];
       currentRow["isbn"] = `https://openlibrary.org/isbn/${item.isbn}.json`;
 
       return currentRow;
