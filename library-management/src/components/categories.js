@@ -73,7 +73,7 @@ export default class Genres extends Component {
       return (
         <div className="align-center">
             <Header />
-            <h1 className="d-inline-block display-2 title_text">Categories Page</h1>
+            <h1 className="horizontal-center">List of Categories</h1>
             <div className='container'>
                 <div className="d-flex flex-wrap justify-content-around">
                     <MDBDataTable
