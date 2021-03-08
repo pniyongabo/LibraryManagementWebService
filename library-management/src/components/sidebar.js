@@ -33,7 +33,7 @@ export default class Sidebar extends Component {
         <div className="row">
           <div className="col-2"></div>
           <div className="col-3">
-            <a href="/genres">Genres</a>
+            <a href="/genres">Categories</a>
           </div>
         </div>
 
