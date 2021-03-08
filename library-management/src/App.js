@@ -7,6 +7,7 @@ import Authors from "./components/authors";
 import Genres from "./components/genres";
 import Loans from "./components/loans";
 import Author from "./components/author";
+import Users from "./components/users";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
@@ -73,6 +74,9 @@ export default class App extends Component {
             </Route>
             <Route path="/loans">
               <Loans />
+            </Route>
+            <Route path="/users">
+              <Users />
             </Route>
             <Route path="/">
               <Homepage />

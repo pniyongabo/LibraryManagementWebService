@@ -53,7 +53,10 @@ export default class Author extends Component {
         </div>
         <div className="author-info">
           <h1>{this.state.authorDetails.name}</h1>
-          <p>{this.state.authorDetails.birth_date}</p>
+          <p>
+            {this.state.authorDetails.birth_date -
+              this.state.authorDetails.death_date}
+          </p>
           <p className="bio">{bio}</p>
         </div>
       </div>
