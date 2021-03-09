@@ -40,12 +40,20 @@ export default class Book extends Component {
     const bookCover = `http://covers.openlibrary.org/b/isbn/${this.state.isbn}-L.jpg?default=false`
     const bookCoverALT = "Book cover of: " + this.state.isbn;
     return(
-      <div>
-        <div>
-          <img src={bookCover} alt={bookCoverALT}/>
-          <p>{this.state.bookDetails}</p>
+      // <div>
+      //   <div>
+      //     <img src={bookCover} alt={bookCoverALT}/>
+      //     <p>{this.state.bookDetails}</p>
+      //   </div>
+      // </div>
+      <div class="container">
+        <div class="container-a">
+            <img src={bookCover} alt={bookCoverALT}/>
         </div>
-      </div>
+        <div class="container-b">
+            <p>{this.state.bookDetails}</p>
+        </div>
+    </div>
        )
   }
     

@@ -1,3 +1,16 @@
-.book-info{
-  font-family: Palatino, Cambria, Helvetica, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.container {
+  display: flex; 
+  height: 100px;
+}
+
+.container-a {
+  width: 50%; 
+  /* background: green; */
+}
+
+.container-b {
+  flex-grow: 1; 
+  font-family: Helvetica;
+  font-size: large;
+  /* background: blue; */
 }

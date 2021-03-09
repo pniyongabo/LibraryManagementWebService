@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.align-center {
+  text-align: center;
+  /* font-family: arial, sans-serif; */
+}
+
+.large-tables {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+}
+
+.large-tables td, .large-tables th {
+  /* border: 1px solid #ddd; */
+  border: none;
+  padding: 8px;
+}
+
+.large-tables tr:nth-child(even){background-color: #fa8320;}
+
+.large-tables tr:hover {background-color: #ddd;}
+
+.large-tables th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #2048fa;
+  color: white;
+}
+
