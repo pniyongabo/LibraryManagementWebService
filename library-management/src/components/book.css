@@ -4,13 +4,11 @@
 }
 
 .container-a {
-  width: 50%; 
-  /* background: green; */
+  width: 30%; 
 }
 
 .container-b {
   flex-grow: 1; 
   font-family: Helvetica;
   font-size: large;
-  /* background: blue; */
 }

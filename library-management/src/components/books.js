@@ -61,11 +61,11 @@ export default class Books extends Component {
       var publishedObject = item.hasOwnProperty("publishedDate")
         ? item.publishedDate
         : {};
-      // currentRow["published"] = publishedObject["$date"];
-      currentRow["published"] =
-        publishedObject !== {}
-          ? new Date(publishedObject.$date).toLocaleString()
-          : "";
+      var publishedDate = publishedObject.hasOwnProperty("$date") ? publishedObject.$date : "";
+      currentRow["published"] = publishedObject !== undefined ? publishedDate.split("T")[0] : "";
+        // publishedObject !== {}
+        //   ? new Date(publishedObject.$date).toLocaleString()
+        //   : "";
       currentRow["categories"] = item.categories.join(", ");
       currentRow["pages"] = item.pageCount;
       currentRow["isbn"] = item.isbn;
@@ -133,7 +133,7 @@ export default class Books extends Component {
     return (
       <div className="align-center">
         <Header />
-        <h1 className="horizontal-center">List of Books</h1>
+        <h1>List of Books</h1>
         <div className="container">
           <div className="d-flex flex-wrap justify-content-around">
             <MDBDataTable striped bordered responsive data={this.state.books} />

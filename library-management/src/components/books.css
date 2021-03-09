@@ -8,12 +8,6 @@
   text-align: left;
   color: black;
 }
-
-.horizontal-center {
-  position: relative;
-  left: 40%;
-}
-
 .title_text {
   font-family: "Graduate", cursive;
   vertical-align: middle;
