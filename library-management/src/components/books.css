@@ -17,3 +17,13 @@
   margin-left: 4rem;
   margin-right: 2rem;
 }
+
+.your-custom-styles tbody tr td {
+  font-family: Helvetica;
+  font-size: 10px;
+}
+
+.your-custom-styles thead tr th {
+  font-family: Helvetica;
+  font-size: 10px;
+}

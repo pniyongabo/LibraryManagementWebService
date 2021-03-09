@@ -48,7 +48,7 @@ export default class Book extends Component {
       // </div>
       <div class="container">
         <div class="container-a">
-            <img src={bookCover} alt={bookCoverALT}/>
+            <img class="book-cover" src={bookCover} alt={bookCoverALT}/>
         </div>
         <div class="container-b">
             <p>{this.state.bookDetails}</p>

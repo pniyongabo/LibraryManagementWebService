@@ -79,7 +79,6 @@ export default class Books extends Component {
       {
         label: "Cover",
         field: "cover",
-        sort: "asc",
       },
       {
         label: "Title",
@@ -99,7 +98,6 @@ export default class Books extends Component {
       {
         label: "Categories",
         field: "categories",
-        sort: "asc",
       },
       {
         label: "Pages",
@@ -136,7 +134,7 @@ export default class Books extends Component {
         <h1>List of Books</h1>
         <div className="container">
           <div className="d-flex flex-wrap justify-content-around">
-            <MDBDataTable striped bordered responsive data={this.state.books} />
+            <MDBDataTable striped bordered responsive data={this.state.books} className='your-custom-styles' />
           </div>
         </div>
 

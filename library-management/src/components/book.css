@@ -4,11 +4,20 @@
 }
 
 .container-a {
-  width: 30%; 
+  width: 50%; 
+  float:left;
 }
 
 .container-b {
-  flex-grow: 1; 
+  /* flex-grow: 1;  */
+  width: 50%; 
+  float:right;
   font-family: Helvetica;
   font-size: large;
+}
+
+.book-cover {
+  width: 100%;
+  height: auto;
+  
 }
