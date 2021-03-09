@@ -45,10 +45,6 @@ export default class Authors extends Component {
             );
           })
           .then((res) => {
-            var objArray = res;
-            return objArray;
-          })
-          .then((res) => {
             var authorURL = [];
             res.map((data) => {
               if (data) {
@@ -64,7 +60,6 @@ export default class Authors extends Component {
             return authorURL;
           })
           .then((res) => {
-            console.log(res);
             this.load_data(res).then((res4) => {
               this.setState({
                 authors: res4,

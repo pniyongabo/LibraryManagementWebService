@@ -242,15 +242,6 @@
     "categories": ["Java"]
   },
   {
-    "title": "Hibernate in Action (Chinese Edition)",
-    "pageCount": 400,
-    "publishedDate": { "$date": "1999-06-01T00:00:00.000-0700" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bauer-cn.jpg",
-    "status": "PUBLISH",
-    "authors": ["Christian Bauer", "Gavin King"],
-    "categories": ["Java"]
-  },
-  {
     "title": "Java Persistence with Hibernate",
     "isbn": "1932394885",
     "pageCount": 880,
@@ -284,17 +275,6 @@
     "status": "PUBLISH",
     "authors": ["Clinton Begin", "Brandon Goodin", "Larry Meadors"],
     "categories": ["Web Development"]
-  },
-  {
-    "title": "Designing Hard Software",
-    "isbn": "133046192",
-    "pageCount": 350,
-    "publishedDate": { "$date": "1997-02-01T00:00:00.000-0800" },
-    "shortDescription": "\"This book is well written ... The author does not fear to be controversial. In doing so, he writes a coherent book.\" --Dr. Frank J. van der Linden, Phillips Research Laboratories",
-    "longDescription": "Have you ever heard, \"I can't define a good design but I know one when I see it\"  Designing Hard Software discusses ways to develop software system designs that have the same tangibility and visibility as designs for hard objects like buildings or computer hardware. It emphasizes steps called \"essential tasks\" which result in software specifications that show how each requirement, including robustness and extensibility, will be satisfied. All software developers and managers seeking to develop \"hard\" software will benefit from these ideas.    There are six essential tasks necessary for a good design:    User (run-time) requirements  Development sponsor (build-time) requirements  Domain information  Behavior identification and allocation  Behavior description  Software system architecture  Designing Hard Software goes beyond the standard software development methodologies such as those by Booch, Rumbaugh, Yourdon, and others, by providing techniques for a complete system architecture as well as explicit measures of the goodness of design. So, \"you define a good design.\"",
-    "status": "PUBLISH",
-    "authors": ["Douglas W. Bennett"],
-    "categories": ["Object-Oriented Programming", "S"]
   },
   {
     "title": "Hibernate Search in Action",
@@ -419,28 +399,6 @@
     "status": "PUBLISH",
     "authors": ["Richard Brooks"],
     "categories": ["PowerBuilder"]
-  },
-  {
-    "title": "Graphics File Formats",
-    "isbn": "133034054",
-    "pageCount": 484,
-    "publishedDate": { "$date": "1995-06-01T00:00:00.000-0700" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/brown.jpg",
-    "longDescription": "Graphics File Formats is a comprehensive guide to the file formats used in computer graphics and related areas. It discusses implementation and design of file formats in a readable style focusing on the basic issues important for the evaluation or development of file formats, including  data types  design goals  color  data organization  data encoding  data compression  classification  and conversion  The second part of the book provides summaries of over 50 graphics file formats in commercial use, such as CGM, DDES, FITS, MPEG, PICT, PostScript, TIFF, QuickTime, RIB, SunRaster, and X bitmap. Following a uniform organization, these summaries are handy reference sources for those needing basic information on these formats.    Written by two computer experts, this book is intended for graphics professionals, programmers and all those in commercial, engineering and scientific applications areas who need to make decisions related to file formats from graphical data.",
-    "status": "PUBLISH",
-    "authors": ["C. Wayne Brown", "Barry J. Shepherd"],
-    "categories": ["Computer Graphics"]
-  },
-  {
-    "title": "Visual Object Oriented Programming",
-    "isbn": "131723979",
-    "pageCount": 280,
-    "publishedDate": { "$date": "1995-02-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/burnett.jpg",
-    "longDescription": "This first book on the union of two rapidly growing approaches to programming--visual programming and object technology--provides a window on a subject of increasing commercial importance. It is an introduction and reference for cutting-edge developers, and for researchers, students, and enthusiasts interested in the design of visual OOP languages and environments.  Visual Object-Oriented Programming includes chapters on both emerging research and on a few classic systems, that together can help those who design visual object-oriented programming systems avoid some known pitfalls. The book contains an experience report on the use of available visual programming languages in a commercial setting, and chapters, by some of the leaders of this cutting-edge subject, covering systems such as Prograph, VIPR, PURSUIT, ThingLab II, Vampire, Forms/3, Self's environment, Vista, SPE, and Cerno.",
-    "status": "PUBLISH",
-    "authors": ["Margaret M. Burnett", "Adele Goldberg", "", "Ted G. Lewis"],
-    "categories": ["Programming"]
   },
   {
     "title": "iOS in Practice",
@@ -806,126 +764,6 @@
     "categories": ["Java"]
   },
   {
-    "title": "Managing Components with Modeler",
-    "isbn": "1932394524k-e",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2005-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal11.jpg",
-    "status": "PUBLISH",
-    "authors": ["Vikram Goyal"],
-    "categories": ["Java"]
-  },
-  {
-    "title": "Command-line Processing with CLI",
-    "isbn": "1932394524l-e",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2005-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal12.jpg",
-    "status": "PUBLISH",
-    "authors": ["Vikram Goyal"],
-    "categories": ["Java"]
-  },
-  {
-    "title": "Understanding and Using Chain",
-    "isbn": "1932394524m-e",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2005-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal13.jpg",
-    "status": "PUBLISH",
-    "authors": ["Vikram Goyal"],
-    "categories": ["Java"]
-  },
-  {
-    "title": "Working with the Logging and Discovery Components",
-    "isbn": "1932394524n-e",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2005-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal14.jpg",
-    "status": "PUBLISH",
-    "authors": ["Vikram Goyal"],
-    "categories": ["Java"]
-  },
-  {
-    "title": "Uploading files with FileUpload",
-    "isbn": "1932394524b-e",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2005-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal2.jpg",
-    "status": "PUBLISH",
-    "authors": ["Vikram Goyal"],
-    "categories": ["Java"]
-  },
-  {
-    "title": "Handling Protocols with the Net Component",
-    "isbn": "1932394524c-e",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2005-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal3.jpg",
-    "status": "PUBLISH",
-    "authors": ["Vikram Goyal"],
-    "categories": ["Java"]
-  },
-  {
-    "title": "XML Parsing with Digester",
-    "isbn": "1932394524d-e",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2005-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal4.jpg",
-    "status": "PUBLISH",
-    "authors": ["Vikram Goyal"],
-    "categories": ["Java"]
-  },
-  {
-    "title": "JXPath and Betwixt: Working with XML",
-    "isbn": "1932394524e-e",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2005-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal5.jpg",
-    "status": "PUBLISH",
-    "authors": ["Vikram Goyal"],
-    "categories": ["Java"]
-  },
-  {
-    "title": "Validating Data with Validator",
-    "isbn": "1932394524f-e",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2005-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal6.jpg",
-    "status": "PUBLISH",
-    "authors": ["Vikram Goyal"],
-    "categories": ["Java"]
-  },
-  {
-    "title": "Enhancing Java Core Libraries with Collections",
-    "isbn": "1932394524g-e",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2005-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal7.jpg",
-    "status": "PUBLISH",
-    "authors": ["Vikram Goyal"],
-    "categories": ["Java"]
-  },
-  {
-    "title": "Enhancing Java Core Libraries with BeanUtils and Lang",
-    "isbn": "1932394524h-e",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2005-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal8.jpg",
-    "status": "PUBLISH",
-    "authors": ["Vikram Goyal"],
-    "categories": ["Java"]
-  },
-  {
-    "title": "Pool and DBCP: Creating and Using Object Pools",
-    "isbn": "1932394524i-e",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2005-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal9.jpg",
-    "status": "PUBLISH",
-    "authors": ["Vikram Goyal"],
-    "categories": ["Java"]
-  },
-  {
     "title": "Python and Tkinter Programming",
     "isbn": "1884777813",
     "pageCount": 688,
@@ -1107,17 +945,6 @@
     "categories": ["Microsoft .NET"]
   },
   {
-    "title": "Distributed Agile in Action",
-    "isbn": "1935182412",
-    "pageCount": 325,
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hazrati.jpg",
-    "shortDescription": "Distributed Agile in Action is the first book to directly address the unique task of going Agile in a distributed team. Rather than rehashing Agile theories, this book supplies the practical examples and step by step advice you need to help your distributed teams adopt and embrace Agile principles. It's a distilled and carefully organized learning aid for working in a distributed Agile environment, with in-depth focus on how to approach three critical components of development-People, Process and Technology.",
-    "longDescription": "As organizations try to do more with less, development teams are less likely to be centrally located, tightly-managed, and permanent. Distributed organizations face special challenges when implementing Agile processes, which rely on frequent communication and responsive teams. Distributed Agile in Action is a guide to running successful Agile projects within geographically and culturally diverse organizations.    Distributed Agile in Action is the first book to directly address the unique task of going Agile in a distributed team. Rather than rehashing Agile theories, this book supplies the practical examples and step by step advice you need to help your distributed teams adopt and embrace Agile principles. It's a distilled and carefully organized learning aid for working in a distributed Agile environment, with in-depth focus on how to approach three critical components of development-People, Process and Technology.    It's jam-packed with suggestions and stories gained from the authors' distributed Agile journey working with teams spread across cultures, continents, and time zones. The book includes a complete case study presenting an increasingly-common project scenario.    This book is written for developers and project managers in distributed teams. Although the examples and case study are presented in Java / Java EE, best practices from rest of the book are technology agnostic and would work equally well for any environment.",
-    "status": "MEAP",
-    "authors": ["Vikas Hazrati", "Balaji D Loganathan"],
-    "categories": ["Software Engineering"]
-  },
-  {
     "title": "Metaprogramming in .NET",
     "isbn": "1617290262",
     "pageCount": 0,
@@ -1126,23 +953,6 @@
     "status": "PUBLISH",
     "authors": ["Kevin Hazzard", "Jason Bock"],
     "categories": ["Microsoft/.NET"]
-  },
-  {
-    "title": "Portlets and Apache Portals",
-    "pageCount": 500,
-    "publishedDate": { "$date": "2005-10-01T00:00:00.000-0700" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hepper.jpg",
-    "shortDescription": "Portlets and Apache Portals was not published by Manning, but the manuscript is available for download from our website \"as is.\"",
-    "longDescription": "Due to the growing complexity of web sites, portals and portlets are experiencing serious growth. Portals help reduce complexity by allowing the dynamic aggregation and display of diverse content in a single web page. Portal components are pluggable parts called portlets. To be \"pluggable\" portlets and portals must satisfy standards. The authors of this book, all but one employees of IBM, created these standards: Java Portlet Specification JSR 168 and Web Services for Remote Portlets (WSRP).    The book starts gently with the basics of portlet technology and a functionrich portlet example. It then dives more deeply into portlets and J2EE, portlet architecture, best practices, and explores how the popular JSF web framework can ease portlet development. It shows how to set up an open source portal and create portlets that dynamically access backend data of various types. It is rich in something readers want: code examples that show them how to do it.",
-    "status": "PUBLISH",
-    "authors": [
-      "Stefan Hepper",
-      "Peter Fischer",
-      "Stephan Hesmer",
-      "Richard Jacob",
-      "David Sean Taylor"
-    ],
-    "categories": ["Java"]
   },
   {
     "title": "Code Generation in Action",
@@ -1155,17 +965,6 @@
     "status": "PUBLISH",
     "authors": ["Jack Herrington"],
     "categories": ["Programming"]
-  },
-  {
-    "title": "Illustrated Guide to HTTP",
-    "isbn": "138582262",
-    "pageCount": 400,
-    "publishedDate": { "$date": "1997-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hethmon.jpg",
-    "longDescription": "If you're interested in building a web server -- or if you're developing an application that depends or will depend on current HTTP protocols -- Illustrated Guide to HTTP is for you! It covers the latest HTTP/1.1 protocol standard as found in RFC 2068 and RFC 2069. Any programmer, developer or web manager involved in web-related software needs this book to keep up with this dynamic area.",
-    "status": "PUBLISH",
-    "authors": ["Paul S. Hethmon"],
-    "categories": ["Internet"]
   },
   {
     "title": "Agile ALM",
@@ -1436,18 +1235,6 @@
     "categories": ["Java"]
   },
   {
-    "title": "Object Technology Centers of Excellence",
-    "isbn": "132612313",
-    "pageCount": 200,
-    "publishedDate": { "$date": "1996-06-01T00:00:00.000-0700" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/korson.jpg",
-    "shortDescription": "Object Technology Centers of Excellence provides guidance to those charged with managing the shift to object technology. It is the only book on the market aimed not at the project level but at the corporate level, with a focus on the infrastructures necessary for a successful transition.",
-    "longDescription": "Object Technology Centers (OTC) are technology transfer catalysts for the rapid development and deployment of object-oriented infrastructure. Object Technology Centers of Excellence provides guidance to those charged with managing the shift to object technology. It is the only book on the market aimed not at the project level but at the corporate level, with a focus on the infrastructures necessary for a successful transition.    This book presents case histories of early adopters of OT, which can help you understand the steps your company must take-and paths it should avoid. Object Technology Centers of Excellence is recommended reading in any organization planning or transitioning to OT, not just involved with formal OTCs. The book includes practical advice for managers, members of technical staffs, and consultants.    The case histories involve some heavy hitters:    IBM  Wiltel  The Travelers  Bell Northern Research  Also, summaries are presented for Andersen Consulting, Northern Telecom, Prudential Insurance Company, Ascom Nexion, and several others.",
-    "status": "PUBLISH",
-    "authors": ["Timothy D. Korson", "Vijay K. Vaishnavi"],
-    "categories": ["Object-Technology Programming", ""]
-  },
-  {
     "title": "Test Driven",
     "isbn": "1932394850",
     "pageCount": 544,
@@ -1589,17 +1376,6 @@
     "categories": ["Business", "Client-Server"]
   },
   {
-    "title": "F# in Action",
-    "isbn": "1935182250",
-    "pageCount": 425,
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/laucher.jpg",
-    "shortDescription": "F# in Action introduces the F# language, but it goes well beyond the standard tutorial and reference approach. F# expert Amanda Laucher draws on her extensive experience deploying F#-based solutions to show you how to use F# in real, day-to-day work.",
-    "longDescription": "Microsoft's F# offers a true functional programming language for the .NET platform. The \"functional programming\" approach creates exceptionally stable, fault-tolerant code that's especially efficient for the concurrent programming requirements of multi-processor and high-availability applications. F# builds on the legacy of Erlang, Haskel, and OCaml, adding full .NET support and easy interoperability with C# and other .NET platform features.    F# in Action introduces the F# language, but it goes well beyond the standard tutorial and reference approach. F# expert Amanda Laucher draws on her extensive experience deploying F#-based solutions to show you how to use F# in real, day-to-day work. You'll see \"Greenfield\" examples, where you build new F# programs from scratch. You'll also dig into \"Brownfield\" scenarios, where you integrate F# code into in-place systems. Along the way, you'll master the functional programming style and learn where and how to apply it most effectively.",
-    "status": "MEAP",
-    "authors": ["Amanda Laucher"],
-    "categories": ["Microsoft .NET"]
-  },
-  {
     "title": "Tuscany SCA in Action",
     "isbn": "1933988894",
     "pageCount": 472,
@@ -1698,18 +1474,6 @@
     "categories": ["Microsoft .NET"]
   },
   {
-    "title": "Doing IT Right",
-    "isbn": "133964256",
-    "pageCount": 350,
-    "publishedDate": { "$date": "1995-12-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lorin.jpg",
-    "shortDescription": "Doing IT Right explores IT in its full complexity. It explains fundamental issues of hardware and software structures; it illuminates central issues of networking and encapsulates the essence of client/server computing; its coverage of costing, risk assessment, and due diligence in making computing decisions is unique.",
-    "longDescription": "Only a handful of Information Technology leaders understand the complete range of IT issues, from basic technology to business strategy. One of them, Harold Lorin, has written a definitive guide for the IT decision maker, the technologist, and the system developer.    The breadth and insight of Doing IT Right is unparalleled. Its usefulness as a guide to deeper understanding of business computing will be appreciated by professionals and managers at all levels. This book covers a rich collection of topics, each explained, interrelated, and placed in a coherent framework so that its importance and likely evolution are clear. The author does not shy away from stating his views; he provides color, insight and humor.    Doing IT Right is a tour de force based on Lorin's prodigious knowledge of the industry derived from years of involvement with development and marketing at IBM and other systems houses and from consulting in a variety of environments. It also has its roots in a great many publications of the author, from trade and journal articles and book chapters to six earlier books.    Doing IT Right explores IT in its full complexity. It explains fundamental issues of hardware and software structures; it illuminates central issues of networking and encapsulates the essence of client/server computing; its coverage of costing, risk assessment, and due diligence in making computing decisions is unique; its presentation of the concepts and issues of object-orientation was considered by the managers at an IBM development laboratory to be Unique and more informative than fifteen other OO presentations put together.",
-    "status": "PUBLISH",
-    "authors": ["Harold Lorin"],
-    "categories": ["Business", "Software Engineering"]
-  },
-  {
     "title": "Adobe AIR in Action",
     "isbn": "1933988487",
     "pageCount": 336,
@@ -1769,46 +1533,6 @@
     "categories": ["Java"]
   },
   {
-    "title": "Power-3D",
-    "isbn": "138412146",
-    "pageCount": 550,
-    "publishedDate": { "$date": "1997-10-01T00:00:00.000-0700" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lussier.jpg",
-    "longDescription": "In the past, serious computer graphics programmers generally had to use \"industrial strength\" workstation hardware and software. Now, advanced graphics capabilities have become available in the PC arena. Whether you're a programmer, 3D enthusiast, C++ coder, games developer or animation specialist, POWER-3D will help you with fast, practical 3D implementations in the Windows environments.",
-    "status": "PUBLISH",
-    "authors": ["Kyle Lussier"],
-    "categories": ["Computer Graphics"]
-  },
-  {
-    "title": "SNA and TCP/IP Enterprise Networking",
-    "isbn": "131271687",
-    "pageCount": 540,
-    "publishedDate": { "$date": "1997-09-01T00:00:00.000-0700" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lynch.jpg",
-    "shortDescription": "SNA and TCP/IP Enterprise Networking shows the reader how enterprise networking evolved, what approaches and techniques can be used today, and where tomorrow's trends lie, illustrating among others Web-to-SNA connectivity and Java based integration approaches.",
-    "longDescription": "Most textbooks concentrate on presenting the theory, concepts, and products, with examples of implementations in some cases. The distinctive quality of SNA and TCP/IP Enterprise Networking is in its structure. It answers not only \"What \", \"Why \", and \"How \", but also \"What's next \". It shows the reader how enterprise networking evolved, what approaches and techniques can be used today, and where tomorrow's trends lie, illustrating among others Web-to-SNA connectivity and Java based integration approaches.    SNA and TCP/IP Enterprise Networking was written by visionaries, scientists, networking product developers, industry experts, consultants, and end-user representatives, who not only implement the products but also participate in definition of open networking standards. It should be equally appealing to the network practitioners implementing technology as the senior managers making strategic decisions on enterprise networking.",
-    "status": "PUBLISH",
-    "authors": [
-      "Daniel C. Lynch",
-      "James P. Gray",
-      "and Edward Rabinovitch",
-      "editors"
-    ],
-    "categories": ["Software Engineering", "Theory"]
-  },
-  {
-    "title": "Subversion in Action",
-    "isbn": "1932394478",
-    "pageCount": 356,
-    "publishedDate": { "$date": "2004-12-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/machols.jpg",
-    "shortDescription": "Learn all about this new open source version control application and why it is replacing CVS as the standard. Examples demonstrate how to customize features to deal with day-to-day problems.",
-    "longDescription": "A new-generation version control tool, Subversion is replacing the current open source standard, CVS. With Subversion's control components you can simplify and streamline the management of your code way beyond what's possible with CVS. For example, with just one powerful feature, Subversion's atomic commit, you can easily track and roll back a set of changes.    Subversion in Action introduces you to Subversion and the concepts of version control. Using production-quality examples it teaches you how Subversion features can be customized and combined to effectively deal with your day-to-day source control problems. You'll learn how to do practical things you cannot do with CVS, like seamlessly renaming and moving files.    The book covers branching and repository control, access control, and much more. It is written not just for release engineers, but also for developers, configuration managers, and system administrators.",
-    "status": "PUBLISH",
-    "authors": ["Jeffrey Machols"],
-    "categories": ["Java"]
-  },
-  {
     "title": "Minimal Perl",
     "isbn": "1932394508",
     "pageCount": 504,
@@ -1863,18 +1587,6 @@
     "status": "PUBLISH",
     "authors": ["Fabrice Marguerie", "Steve Eichert", "Jim Wooley"],
     "categories": ["Microsoft .NET"]
-  },
-  {
-    "title": "Internet BBSs",
-    "isbn": "132869985",
-    "pageCount": 400,
-    "publishedDate": { "$date": "1996-10-01T00:00:00.000-0700" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mark.jpg",
-    "shortDescription": "Internet BBSs: A Guided Tour provides in-depth coverage of the new world of true BBSs now available world-wide. It is a valuable resource for anyone currently using the Internet.",
-    "longDescription": "OK, so you use the Internet. You've surfed some Web sites and maybe sent e-mail. But, chances are, you've overlooked the rich and really personal dimension of the Internet represented by the explosive growth of Internet BBSs. That's because up till now BBS publications were limited in scope to the old era of dial-up BBSs.    Until recently the world of BBSs was geographically compartmentalized: in practical terms only the BBSs within a local telphone call were accessible. Now, the Internet has made all Internet BBSs accessible to anyone in the world. Internet BBSs: A Guided Tour provides in-depth coverage of this new world of true BBSs now available world-wide. It is a valuable resource for anyone currently using the Internet. Users of the major on-line service forums and chat groups should also read it to find out how they can access a much richer variety of BBSs at less cost.",
-    "status": "PUBLISH",
-    "authors": ["Richard Scott Mark"],
-    "categories": ["Internet"]
   },
   {
     "title": "Algorithms of the Intelligent Web",
@@ -1941,30 +1653,6 @@
     "status": "PUBLISH",
     "authors": ["Paul Messick"],
     "categories": ["Programming"]
-  },
-  {
-    "title": "Planning and Managing ATM Networks",
-    "isbn": "132621894",
-    "pageCount": 320,
-    "publishedDate": { "$date": "1997-06-01T00:00:00.000-0700" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/minoli.jpg",
-    "shortDescription": "Planning and Managing ATM Networks covers strategic planning, initial deployment, overall management, and the day-to-day operation of ATM networks.",
-    "longDescription": "Not only is ATM the best available means to greater transmission capacity, it has also the best potential to meet the needs for sophisticated service control, distributed network oversight, efficient operation, and improved flexibility.    Planning and Managing ATM Networks covers strategic planning, initial deployment, overall management, and the day-to-day operation of ATM networks. It defines steps to determine requirements for ATM networks, as ATM implementation becomes widespread in the corporate enterprise network. It describes fundamental management concepts and procedures, including fault and configuration management, performance management, accounting, and security.",
-    "status": "PUBLISH",
-    "authors": ["Daniel Minoli", "Thomas W. Golway", "", "Norris P. Smith"],
-    "categories": ["Client-Server", "Networking"]
-  },
-  {
-    "title": "Client/Server Applications on ATM Networks",
-    "isbn": "137353006",
-    "pageCount": 350,
-    "publishedDate": { "$date": "1997-01-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/minoli2.jpg",
-    "shortDescription": "Client/Server Appliactions on ATM Networks discusses ATM as the key technology for transforming the enterprise network from data-only to an integrated data, voice, video, image and multimedia corporate infrastructure.",
-    "longDescription": "Today, to meet the surging demands of client/server company-wide processes--distributed cooperative computing, business/scientific imaging, video conferencing, multimedia, distance learning and many more--corporations are finding they must extend high-speed communications beyond just a few key sites. This book discusses ATM as the key technology for transforming the enterprise network from data-only to an integrated data, voice, video, image and multimedia corporate infrastructure.    Previous books have covered ATM and client/server separately. This book, intended for networking professionals, is unique in its focus on the hows and whys of the inevitable marriage of these two technologies.",
-    "status": "PUBLISH",
-    "authors": ["Daniel Minoli", "Andrew Schmidt"],
-    "categories": ["Client-Server", "Networking"]
   },
   {
     "title": "JavaFX in Action",
@@ -2345,18 +2033,6 @@
     "categories": ["Algorithmic Art"]
   },
   {
-    "title": "Windows Phone 7 in Action",
-    "isbn": "1617290092",
-    "pageCount": 0,
-    "publishedDate": { "$date": "2012-08-21T00:00:00.000-0700" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/perga.jpg",
-    "shortDescription": "Windows Phone 7 in Action is a hands-on guide to building mobile applications for WP7 using Silverlight, C#, and XNA. Written for developers who already know their way around Visual Studio, this book zips through the basics, such as writing code to dial the phone, writing emails, and sending text messages, and moves on to the nuts and bolts of building great phone apps. By working through the numerous examples and tutorials, you'll master the APIs used to work with a phone's sensors and hardware, such as the accelerometer, camera, touch screen, GPS, and microphone. You'll also tackle web services and applications that use location and push notification services.",
-    "longDescription": "Windows Phone 7 is a major shift in the way Microsoft developers design, develop, and sell mobile apps. By leveraging a trio of established technologies-Silverlight, XNA, and C#   developers can blend what they already know about Windows development with the new opportunities and challenges presented by a mobile platform. And with exciting new Windows Phone devices rolling out now, the demand for WP7 apps is just starting to build.    Windows Phone 7 in Action is a hands-on guide to building mobile applications for WP7 using Silverlight, C#, and XNA. Written for developers who already know their way around Visual Studio, this book zips through the basics, such as writing code to dial the phone, writing emails, and sending text messages, and moves on to the nuts and bolts of building great phone apps. By working through the numerous examples and tutorials, you'll master the APIs used to work with a phone's sensors and hardware, such as the accelerometer, camera, touch screen, GPS, and microphone. You'll also tackle web services and applications that use location and push notification services.    Along the way, you'll discover why Microsoft opted for Silverlight and XNA as the core technologies for WP7. As with Silverlight for the desktop, you can create stunning visual effects using C#. Silverlight for Windows Phone has been enriched with navigation services, a new execution model to better satisfy mobile requirements, and hooks for embedding a browser, playing media files, running cool animations, and more.    The XNA Framework provides libraries to handle 3D graphics, audio, and touch input. Because games are a key target of mobile app development, by the end of the book you will be able to write your own XNA game, utilizing the unique input abilities of the phone. You also learn how to tune your game code to get the best performance while running in the phone's constrained environment.",
-    "status": "PUBLISH",
-    "authors": ["Timothy Binkley-Jones", "Massimo Perga", "", "Michael Sync"],
-    "categories": ["Mobile Technology"]
-  },
-  {
     "title": "Lift in Action",
     "isbn": "1935182803",
     "pageCount": 450,
@@ -2504,18 +2180,6 @@
     "categories": ["Java"]
   },
   {
-    "title": "Working with Objects",
-    "isbn": "134529308",
-    "pageCount": 420,
-    "publishedDate": { "$date": "1995-08-01T00:00:00.000-0700" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/reenskaug.jpg",
-    "shortDescription": "\"The first method that deals realistically with reuse, and one of the few that comes close to describing what I do when I design.\" --Ralph Johnson, University of Illinois",
-    "longDescription": "Working With Objects is the authoritative account of the highly successful OOram method for software analysis, design, development, maintenance and reuse. OOram has been fine-tuned over a decade on hundreds of projects by Trygve Reenskaug and his collaborators. It is supported by available CASE tools, training, and consulting.    Working With Objects is the source on a method which takes an evolutionary step forward in object-oriented development practices. OOram adds the intuitively simple but powerful concept of a role to object-oriented models and methods. For example, imagine trying to describe a person as an object. The most effective way to do this would be to independently describe each of the roles that person adopts (parent, employee, and so on) and then define how the person supports them. These ideas form the heart of the OOram approach.    In a presentation rich with examples, Working With Objects is anything but the typical, dry methodology book. It tells real-life stories. It teaches how to apply role modeling and benefit from its inherent advantages, including:    Multiple views of the same model  Support for both data- and process-centered approaches  Large systems described through a number of distinct models  Derivation of composite models from simpler, base models  Decentralized management of very large systems  Programming language-independent design  Step-by-step transformation of models into implementations  Integration of powerful reuse techniques with work policies, processes and organization",
-    "status": "PUBLISH",
-    "authors": ["Trygve Reenskaug"],
-    "categories": ["Object-Oriented Programming"]
-  },
-  {
     "title": "PHP in Action",
     "isbn": "1932394753",
     "pageCount": 552,
@@ -2538,18 +2202,6 @@
     "status": "PUBLISH",
     "authors": ["John Resig"],
     "categories": ["Java"]
-  },
-  {
-    "title": "Microsoft Office Essentials",
-    "isbn": "132623129",
-    "pageCount": 480,
-    "publishedDate": { "$date": "1996-07-01T00:00:00.000-0700" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/richardson2.jpg",
-    "shortDescription": "Microsoft Office Essentials simply covers the things you really want to know and skips over all those esoteric features that 99 out of 100 readers never use.",
-    "longDescription": "Many books on Microsoft Office try to cover every feature of the software. You don't use every feature, though. Microsoft Office Essentials simply covers the things you really want to know and skips over all those esoteric features that 99 out of 100 readers never use.    You will learn, among other things, how to use:    - Microsoft Office Manager and Shortcut Bar  - Word's formatting tools -- templates, styles, and wizards  - Word to create newsletters, reports, etc.  - Word and Excel together, capitalizing on the strengths of both  - Excel to create simple workbooks for such tasks as balancing your checkbook or preparing a budget  - Excel to display your data with charts  - Powerpoint to develop a presentation that combines words and clip-art images    Once you get to know Microsoft Office Essentials you'll want to keep it within easy reach of you computer...",
-    "status": "PUBLISH",
-    "authors": ["Ronny Richardson"],
-    "categories": ["Business"]
   },
   {
     "title": "Swing",
@@ -2681,18 +2333,6 @@
     "categories": ["Programming"]
   },
   {
-    "title": "Multiprotocol over ATM",
-    "isbn": "138892709",
-    "pageCount": 341,
-    "publishedDate": { "$date": "1998-03-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/schmidt.jpg",
-    "shortDescription": "With the detailed coverage of the entire set of protocols in Multiprotocol over ATM, you can be equal to the task.",
-    "longDescription": "Networks constructed with current ATM protocol design standards exceed by far former network capabilities. Unfortunately, this new ATM power and flexibility come at the cost of greater complexity. With the detailed coverage of the entire set of protocols in Multiprotocol over ATM, you can be equal to the task. If you're a network manager or designer, responsible for planning, building, or managing an enterprise or campus network, this book is for you.",
-    "status": "PUBLISH",
-    "authors": ["Andrew Schmidt", "Daniel Minoli"],
-    "categories": ["Internet", "Networking"]
-  },
-  {
     "title": "Dependency Injection in .NET",
     "isbn": "1935182501",
     "pageCount": 375,
@@ -2790,25 +2430,6 @@
     "categories": ["Microsoft .NET"]
   },
   {
-    "title": "Making Sense of Java",
-    "isbn": "132632942",
-    "pageCount": 180,
-    "publishedDate": { "$date": "1996-06-01T00:00:00.000-0700" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/simpson.jpg",
-    "shortDescription": "Making Sense of Java clearly and concisely explains the concepts, features, benefits, potential, and limitations of Java.",
-    "longDescription": "The meteoric rise of interest in Java, and the simultaneous rise in Java-related hype, make this book's no-nonsense evaluation essential reading for all levels of professionals, from managers to programmers. Making Sense of Java clearly and concisely explains the concepts, features, benefits, potential, and limitations of Java. It is not a programmer's how-to guide and assumes little technical knowledge, though software developers will find this lucid overview to be a valuable introduction to the possible uses and capabilities of Java.",
-    "status": "PUBLISH",
-    "authors": [
-      "Bruce Simpson",
-      "John Mitchell",
-      "Brian Christeson",
-      "Rehan Zaidi",
-      "",
-      "Jonathan Levine"
-    ],
-    "categories": ["Java", "Business"]
-  },
-  {
     "title": "C++/CLI in Action",
     "isbn": "1932394818",
     "pageCount": 416,
@@ -2877,18 +2498,6 @@
     "status": "PUBLISH",
     "authors": ["Bruce Snyder", "Dejan Bosanac", "", "Rob Davies"],
     "categories": ["Java"]
-  },
-  {
-    "title": "Implementing PeopleSoft Financials",
-    "isbn": "138411808",
-    "pageCount": 220,
-    "publishedDate": { "$date": "1997-01-01T00:00:00.000-0800" },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/stephens.jpg",
-    "shortDescription": "Implementing PeopleSoft Financials discusses the issues that arise and the pitfalls to avoid. Every member of the implementation team--from entry-level accounting clerk through MIS staff to executive sponsors--will benefit from reading this book.",
-    "longDescription": "The PeopleSoft promise is enticing: Here's a way for your company to implement a complete and flexible financial infrastructure in a client/server environment without the burdens of low-level programming. But, implementation remains complex and requires reengineering of the business processes and cultures of the using organizations. The author, an experienced implementor of PeopleSoft systems, discusses the issues that arise and the pitfalls to avoid. Every member of the implementation team--from entry-level accounting clerk through MIS staff to executive sponsors--will benefit from reading this book. The views it contains, coming from an independent authority, will also prove useful to those who are considering adopting PeopleSoft for their companies.",
-    "status": "PUBLISH",
-    "authors": ["Early Stephens"],
-    "categories": ["Business", "Client-Server"]
   },
   {
     "title": "SQL Server DMVs in Action",
@@ -3220,17 +2829,6 @@
     "categories": ["Client-Server", "Networking"]
   },
   {
-    "title": "The Engaging Web",
-    "isbn": "9781935182078",
-    "pageCount": 325,
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/zichermann.jpg",
-    "shortDescription": "The Engaging Web: How Fun and Games Improve Your Site shows web developers how to incorporate games into websites. This book will help you decode the possibilities and provide a series of proven and tangible strategies that any web developer, producer, or product manager can use to implement games in their website. Whether you're looking to make games the centerpiece of your site, an added-value feature, or you just want to engage and excite your users, The Engaging Web will help you develop a strategy that harnesses the power of games.",
-    "longDescription": "Games are the fastest-growing and stickiest form of entertainment. For a website, games offer powerful potential to acquire new users, build engagement, and enhance revenue. Implementing games in a website can be complicated, though. There are hundreds of technical and process options to choose from, and the landscape is constantly shifting.    The Engaging Web: How Fun and Games Improve Your Site shows web developers how to incorporate games into websites. This book will help you decode the possibilities and provide a series of proven and tangible strategies that any web developer, producer, or product manager can use to implement games in their website. Whether you're looking to make games the centerpiece of your site, an added-value feature, or you just want to engage and excite your users, The Engaging Web will help you develop a strategy that harnesses the power of games.    Through this book, you will take away an in-depth understanding of the current state of the art in game and web planning and integration methodologies. It begins by presenting an understanding of basic \"funware\" principles - or how non-designers can use games to further business objectives. Powerful funware designs like frequent flyer programs, casino games, and leaderboard/ladders will be deconstructed and componentized so that you can leverage their strengths for your specific site and business objectives.    You'll then investigate the three basic recipes for melding games with the web, and look at specific examples of integration approaches that have been successfully deployed across various industries. Finally, you'll examine social networking considerations and look at code examples.    Whether you're building a business or consumer site, games and funware design can be a powerful weapon in your battle for user engagement, stickiness, and revenue. The Engaging Web is the field guide that gives you the best tactics, techniques, and strategies for winning the war.    WHAT'S INSIDE        * Understanding funware and game design      * Principal funware designs: casinos frequent flyer programs, leaderboards      * Matching games to your business objectives      * Recipes for implementing games on your site      * Games, social networking and you      * Code examples",
-    "status": "MEAP",
-    "authors": ["Gabe Zichermann", "Chris Cunningham"],
-    "categories": ["Web Development"]
-  },
-  {
     "title": "Enterprise OSGi In Action",
     "isbn": "1617290130",
     "pageCount": 0,
@@ -3350,29 +2948,12 @@
     "categories": []
   },
   {
-    "title": "TCP/IP Programming for OS/2",
-    "isbn": "132612496",
-    "pageCount": 0,
-    "publishedDate": { "$date": "1996-04-23T00:00:00.000-0700" },
-    "status": "PUBLISH",
-    "authors": ["Steven J. Gutz"],
-    "categories": []
-  },
-  {
     "title": "SCWCD Exam Study Kit",
     "isbn": "1930110596",
     "pageCount": 0,
     "publishedDate": { "$date": "2002-07-01T00:00:00.000-0700" },
     "status": "PUBLISH",
     "authors": ["Hanumant Deshmukh", "Jignesh Malavia"],
-    "categories": []
-  },
-  {
-    "title": "Unit Testing in C++",
-    "isbn": "1617290386",
-    "pageCount": 0,
-    "status": "PUBLISH",
-    "authors": ["Bruce Trask", "Angel Roman"],
     "categories": []
   },
   {
@@ -3492,22 +3073,6 @@
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/jones2.jpg",
     "status": "PUBLISH",
     "authors": ["Don Jones", "Richard Siddaway", "", "Jeffery Hicks"],
-    "categories": []
-  },
-  {
-    "title": "Augmented Reality Revealed",
-    "isbn": "1617290165",
-    "pageCount": 0,
-    "status": "MEAP",
-    "authors": ["Robert A. Rice Jr."],
-    "categories": []
-  },
-  {
-    "title": "Building Well-Structured JavaScript Applications",
-    "isbn": "1617290599",
-    "pageCount": 0,
-    "status": "MEAP",
-    "authors": ["Julio C. Ody"],
     "categories": []
   },
   {
@@ -3831,14 +3396,6 @@
     "categories": []
   },
   {
-    "title": "Action Guide (aka VB .NET)",
-    "isbn": "1930110324",
-    "pageCount": 0,
-    "status": "PUBLISH",
-    "authors": ["Paul Messick"],
-    "categories": []
-  },
-  {
     "title": "Learn Active Directory Management in a Month of Lunches",
     "isbn": "1617291196",
     "pageCount": 0,
@@ -4039,30 +3596,12 @@
     "categories": []
   },
   {
-    "title": "RavenDB in Action",
-    "isbn": "1617291501",
-    "pageCount": 0,
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/syn-hershko.jpg",
-    "status": "MEAP",
-    "authors": ["Itamar Syn-Hershko"],
-    "categories": []
-  },
-  {
     "title": "OCP Java SE 7 Programmer II Certification Guide",
     "isbn": "161729148X",
     "pageCount": 0,
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/gupta2.jpg",
     "status": "MEAP",
     "authors": ["Mala Gupta"],
-    "categories": []
-  },
-  {
-    "title": "Backbone.js in Action",
-    "isbn": "1617291536",
-    "pageCount": 0,
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/breed.jpg",
-    "status": "MEAP",
-    "authors": ["Samuel M. Breed", "Cole Krumbholz", "", "Phillip Whisenhunt"],
     "categories": []
   },
   {
@@ -4184,15 +3723,6 @@
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ketelsen.jpg",
     "status": "MEAP",
     "authors": ["Brian Ketelsen", "Erik St. Martin", "", "William Kennedy"],
-    "categories": []
-  },
-  {
-    "title": "The Programmer's Guide to Apache Thrift ",
-    "isbn": "1617291811",
-    "pageCount": 0,
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/abernethy.jpg",
-    "status": "MEAP",
-    "authors": ["Randy Abernethy"],
     "categories": []
   },
   {
@@ -4372,15 +3902,6 @@
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/drobnik.jpg",
     "status": "MEAP",
     "authors": ["Oliver Drobnik"],
-    "categories": []
-  },
-  {
-    "title": "Chef in Action",
-    "isbn": "1617292214",
-    "pageCount": 0,
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/aivaliotis.jpg",
-    "status": "MEAP",
-    "authors": ["Dimitri Aivaliotis"],
     "categories": []
   },
   {

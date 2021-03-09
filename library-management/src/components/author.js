@@ -16,7 +16,6 @@ export default class Author extends Component {
   componentDidMount() {
     this.getAuthorDetails(this.props.match.params.id)
       .then((res1) => {
-        console.log(res1);
         this.setState({
           authorDetails: res1,
           authorDetailsLoaded: true,
@@ -54,8 +53,8 @@ export default class Author extends Component {
         <div className="author-info">
           <h1>{this.state.authorDetails.name}</h1>
           <p>
-            {this.state.authorDetails.birth_date -
-              this.state.authorDetails.death_date}
+            {this.state.authorDetails.birth_date} -{" "}
+            {this.state.authorDetails.death_date}
           </p>
           <p className="bio">{bio}</p>
         </div>
