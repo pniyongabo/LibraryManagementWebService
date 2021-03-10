@@ -5,6 +5,7 @@ import Books from "./components/books";
 import Book from "./components/book";
 import Authors from "./components/authors";
 import Categories from "./components/categories";
+import Category from "./components/category";
 import Loans from "./components/loans";
 import Author from "./components/author";
 import Users from "./components/users";
@@ -72,6 +73,13 @@ export default class App extends Component {
             <Route path="/categories">
               <Categories></Categories>
             </Route>
+            <Route
+              path="/category/:category"
+              exact
+              render={(props) => (
+                <Category {...props} all_data={this.state.data}/>
+              )}
+            />
             <Route path="/loans">
               <Loans />
             </Route>
