@@ -77,8 +77,7 @@ export default class Users extends Component {
               className="form-check-label"
               htmlFor="checkbox"
               id="newsletter"
-            >
-              Sign up for the newsletter
+            >Si Sign up for the newsletter
             </label>
           </div>
           <br />

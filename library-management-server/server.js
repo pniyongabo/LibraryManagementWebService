@@ -21,6 +21,7 @@ app.get("/api/authors/list", helperDataController.getListOfAuthors);
 app.get("/api/books/list", helperDataController.getListOfBooks);
 app.get("/api/books/completelist", helperDataController.getCompleteListOfBooks);
 app.get("/api/books/mappings", helperDataController.getBooksMappings);
+app.get("/api/categories/mappings", helperDataController.getCategoriesMappings);
 
 app.post("/api/users/submit", (req, res) => {
   res.write(`Name: ${req.body.name}\n`);
