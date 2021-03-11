@@ -8,10 +8,12 @@ const getJsonData = function (basePathToData, filename) {
   return JSON.parse(fs.readFileSync(filename, "utf-8"));
 };
 
-const groupBy = key => array =>
+const groupBy = (key) => (array) =>
   array.reduce((objectsByKeyValue, obj) => {
     const value = obj[key];
-    objectsByKeyValue[value] = (objectsByKeyValue[value] || []).concat(obj["title"]);
+    objectsByKeyValue[value] = (objectsByKeyValue[value] || []).concat(
+      obj["title"]
+    );
     return objectsByKeyValue;
   }, {});
 
@@ -21,7 +23,7 @@ exports.getListOfBooks = function (request, response) {
 };
 
 exports.getListOfAuthors = function (request, response) {
-  var data = getJsonData(basePathToData, "books.json");
+  var data = getJsonData(basePathToData, "authors.json");
   return response.send(data);
 };
 
@@ -41,6 +43,6 @@ exports.getBooksMappings = function (request, response) {
 
 exports.getCategoriesMappings = function (request, response) {
   var data = getJsonData(basePathToData, "books.json");
-  const groupByBrand = groupBy('categories');
+  const groupByBrand = groupBy("categories");
   return response.send(groupByBrand(data));
 };

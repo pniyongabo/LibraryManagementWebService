@@ -4,6 +4,8 @@ import { MDBDataTable } from "mdbreact";
 
 import Sidebar from "./sidebar";
 import Header from "./header";
+const fs = require("browserify-fs");
+const path = require("path");
 export default class Authors extends Component {
   constructor(props) {
     super(props);
@@ -17,58 +19,13 @@ export default class Authors extends Component {
   componentDidMount() {
     this.getAllAuthors()
       .then((res1) => {
-        this.get_isbn(res1)
-          .then((res3) => {
-            this.load_data1(res3).then((res4) => {
-              let uniqeArray = [...new Set(res4)];
-              this.setState({
-                names: uniqeArray,
-              });
-            });
-            var urlArray = [];
-            if (res3.length > 0) {
-              res3.map((data) => {
-                urlArray.push(data);
-              });
-            }
-            return urlArray;
-          })
-          .then((res4) => {
-            return Promise.all(
-              res4.map((data) => {
-                return fetch(data.isbn)
-                  .then((res) => res.json())
-                  .catch((error) => {
-                    console.log(error);
-                  });
-              })
-            );
-          })
-          .then((res) => {
-            var authorURL = [];
-            res.map((data) => {
-              if (data) {
-                if (data.authors) {
-                  authorURL.push(data.authors);
-                } else {
-                  authorURL.push("");
-                }
-              } else {
-                authorURL.push("");
-              }
-            });
-            return authorURL;
-          })
-          .then((res) => {
-            this.load_data(res).then((res4) => {
-              this.setState({
-                authors: res4,
-                isLoaded: true,
-              });
-            });
+        this.load_data(res1).then((res3) => {
+          this.setState({
+            authors: res3,
+            isLoaded: true,
           });
+        });
       })
-
       .catch((error) => console.log(error));
   }
 
@@ -114,26 +71,12 @@ export default class Authors extends Component {
     return isbnData;
   };
 
-  load_data1 = async (rawData) => {
-    const dataRows = rawData.map((item, i) => {
-      var currentRow = {};
-      currentRow["name"] = item.name;
-      return currentRow;
-    });
-
-    return dataRows;
-  };
   load_data = async (rawData) => {
     const dataRows = rawData.map((item, i) => {
       var currentRow = {};
-      currentRow["name"] = this.state.names[i].name;
-      if (item) {
-        currentRow["link"] = item[0].key;
-        currentRow["clickEvent"] = () => this.goToAuthorPage(item[0].key);
-      } else {
-        currentRow["link"] = "";
-      }
-
+      currentRow["name"] = item.name;
+      currentRow["link"] = item.link;
+      currentRow["clickEvent"] = () => this.goToAuthorPage(item.link);
       return currentRow;
     });
 
