@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+
+import Header from "./header";
+import Sidebar from "./sidebar";
+
 import "./users.css";
 
-import book_logo from "../assets/book_logo_black.png";
-import book_logo2 from "../assets/logo2.png";
-import Sidebar from "./sidebar";
 export default class Users extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +25,7 @@ export default class Users extends Component {
           method="post"
           encType="text/html"
         >
-          <h2 className="mt-2 mb-4">Checkout Form</h2>
+          <h2 className="mt-2 mb-4 text-center">Users Checkout Form</h2>
           <div className="form-group">
             <label htmlFor="name">Name *</label>
             <input
@@ -100,21 +101,10 @@ export default class Users extends Component {
 
   render() {
     return (
-      <div className="title">
-        <div className="jumbotron">
-          <img
-            className="d-inline-block img-fluid logo"
-            src={book_logo2}
-            alt="logo"
-            height="auto"
-            width="13%"
-          />
-          <h1 className="d-inline-block display-2 title_text">Users Page</h1>
-          <div>{this.create_form()}</div>
-          <div>
-            <Sidebar />
-          </div>
-        </div>
+      <div>
+        <Header />   
+        <div>{this.create_form()}</div> 
+        <Sidebar />
       </div>
     );
   }

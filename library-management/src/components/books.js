@@ -8,8 +8,6 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 
-// import book_logo from "../assets/book_logo_black.png";
-
 export default class Books extends Component {
   constructor(props) {
     super(props);
@@ -54,22 +52,20 @@ export default class Books extends Component {
       var currentRow = {};
 
       var theLink = `http://covers.openlibrary.org/b/isbn/${item.isbn}-S.jpg?default=false`;
-      currentRow["cover"] = <img src={theLink} />;
-
-      currentRow["title"] = item.title;
-      currentRow["authors"] = item.authors.join(", ");
-      var publishedObject = item.hasOwnProperty("publishedDate")
+      var bookCoverALT = "Book cover of: " + item.title;
+      var publishedDateObject = item.hasOwnProperty("publishedDate")
         ? item.publishedDate
         : {};
-      var publishedDate = publishedObject.hasOwnProperty("$date") ? publishedObject.$date : "";
-      currentRow["published"] = publishedObject !== undefined ? publishedDate.split("T")[0] : "";
-        // publishedObject !== {}
-        //   ? new Date(publishedObject.$date).toLocaleString()
-        //   : "";
+      var publishedDateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+      var publishedDateString = new Date(publishedDateObject.$date).toLocaleString("en-US", publishedDateOptions);
+      
+      currentRow["cover"] = <img src={theLink} alt={bookCoverALT} />;
+      currentRow["title"] = item.title;
+      currentRow["authors"] = item.authors.join(", ");
+      currentRow["published"] = publishedDateString !== "Invalid Date" ? publishedDateString : "";
       currentRow["categories"] = item.categories.join(", ");
       currentRow["pages"] = item.pageCount;
       currentRow["isbn"] = item.isbn;
-
       currentRow["clickEvent"] = () => this.goToBookPage(item.isbn);
 
       return currentRow;
@@ -79,6 +75,7 @@ export default class Books extends Component {
       {
         label: "Cover",
         field: "cover",
+        sort: "disabled",
       },
       {
         label: "Title",
@@ -93,11 +90,12 @@ export default class Books extends Component {
       {
         label: "Pub Date",
         field: "published",
-        sort: "asc",
+        sort: "disabled",
       },
       {
         label: "Categories",
         field: "categories",
+        sort: "disabled",
       },
       {
         label: "Pages",
@@ -137,7 +135,6 @@ export default class Books extends Component {
             <MDBDataTable striped bordered responsive data={this.state.books} className='your-custom-styles' />
           </div>
         </div>
-
         <Sidebar />
       </div>
     );

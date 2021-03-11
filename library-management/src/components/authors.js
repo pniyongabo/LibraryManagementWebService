@@ -118,7 +118,7 @@ export default class Authors extends Component {
               striped
               bordered
               responsive
-              data={this.state.authors}
+              data={this.state.authors} className='your-custom-styles'
             />
           </div>
         </div>

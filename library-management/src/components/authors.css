@@ -8,3 +8,13 @@
   text-decoration: none !important;
   text-shadow: 1px 1px 1px #555 !important;
 }
+
+.your-custom-styles tbody tr td {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+.your-custom-styles thead tr th {
+  font-family: Helvetica;
+  font-size: 14px;
+}
