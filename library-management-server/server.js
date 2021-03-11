@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, '/build')));
 
 app.get('/*', (req, res, next) => {
     if (!req.path.includes('api'))
-        res.sendFile(path.join(__dirname, '../library-management/build', 'index.html'));
+        res.sendFile(path.join(__dirname, '/build', 'index.html'));
     else next();
 });
 
