@@ -12,9 +12,12 @@ app.use(parser.urlencoded({ extended: false }));
 
 var helperDataController = require("./helperDataController");
 
-app.get("/", (req, res) => {
-  var helloworld = { Hello: "World" };
-  res.send(helloworld);
+app.use(express.static(path.join(__dirname, '/build')));
+
+app.get('/*', (req, res, next) => {
+    if (!req.path.includes('api'))
+        res.sendFile(path.join(__dirname, '/build', 'index.html'));
+    else next();
 });
 
 app.get("/api/authors/list", helperDataController.getListOfAuthors);
