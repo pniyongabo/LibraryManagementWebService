@@ -2,6 +2,8 @@
 
 A class project for the CS 465/565: Full Stack Web Development (Winter 2021) at Porland State University. A collaboration by [Patrick Niyongabo](https://github.com/pniyongabo), [Xavier Reed](https://github.com/reedx8), and [Huy Doan](https://github.com/huy26).
 
+See demo here: https://library-management-service.herokuapp.com
+
 ### Introduction
 
 A library management web service that maintains and organizes a user’s library books online, showing a book’s availability and providing other essential library services. 
