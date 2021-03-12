@@ -1,20 +1,8 @@
-.jumbotron {
-  background-color: transparent !important;
-  padding-top: 1% !important;
-  padding-bottom: 1% !important;
+.header-wrapper {
+  position:relative;
 }
-
-.title {
-  text-align: left;
-  color: black;
-}
-
-.title_text {
-  font-family: "Graduate", cursive;
-  vertical-align: middle;
-}
-
-.logo {
-  margin-left: 4rem;
-  margin-right: 2rem;
+.header-img {
+    width: 70%;
+    display:block;
+    margin:auto;
 }
