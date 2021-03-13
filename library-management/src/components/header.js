@@ -6,7 +6,7 @@ import "./header.css"
 export default class Sidebar extends Component {
     render() {
         return (
-            <Navbar bg="dark" expand="lg">
+            <Navbar bg="dark" expand="lg" variant="dark">
                 <Navbar.Brand href="/" className="textStyle">
                     <img
                         alt="Library logo"
@@ -17,8 +17,8 @@ export default class Sidebar extends Component {
                     />{' '}
                     Library Home
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="/books" className="textStyle">Books</Nav.Link>
                         <Nav.Link href="/authors" className="textStyle">Authors</Nav.Link>
