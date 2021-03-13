@@ -6,7 +6,7 @@ import "./header.css"
 export default class Header extends Component {
     render() {
         return (
-            <Navbar bg="dark" expand="lg" variant="dark" className="nav_bar">
+            <Navbar bg="dark" expand="lg" variant="dark" className="sticky_nav">
                 <Navbar.Brand href="/" className="textStyle">
                     <img
                         alt="Library logo"

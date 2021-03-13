@@ -2,7 +2,7 @@
     color: white !important;
 }
 
-.nav_bar{
+.sticky_nav{
     position: sticky !important;
     top: 0 !important;
 }
