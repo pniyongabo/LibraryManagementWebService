@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-
+const userModel = require("./server");
 const basePathToData = path.join(__dirname, "helperdata");
 
 const getJsonData = function (basePathToData, filename) {

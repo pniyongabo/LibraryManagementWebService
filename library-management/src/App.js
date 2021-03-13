@@ -9,6 +9,7 @@ import Category from "./components/category";
 import Loans from "./components/loans";
 import Author from "./components/author";
 import Users from "./components/users";
+import CheckoutList from "./components/checkoutList";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
@@ -77,7 +78,7 @@ export default class App extends Component {
               path="/category/:category"
               exact
               render={(props) => (
-                <Category {...props} all_data={this.state.data}/>
+                <Category {...props} all_data={this.state.data} />
               )}
             />
             <Route path="/loans">
@@ -85,6 +86,9 @@ export default class App extends Component {
             </Route>
             <Route path="/users">
               <Users />
+            </Route>
+            <Route path="/checkoutlist">
+              <CheckoutList></CheckoutList>
             </Route>
             <Route path="/">
               <Homepage />
