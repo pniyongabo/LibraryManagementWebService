@@ -76,7 +76,6 @@ export default class Author extends Component {
         <Header />
         <div className="mx-auto">
           {this.load_data(this.props.match.params.id)}
-          <Sidebar />
         </div>
       </div>
     );

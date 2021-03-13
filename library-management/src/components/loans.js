@@ -15,7 +15,6 @@ export default class Loans extends Component {
         <div class="header-wrapper">
             <img class="header-img" src={book_background} alt='book background image' />      
         </div>
-        <Sidebar />
       </div>
     );
   }

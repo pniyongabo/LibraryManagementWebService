@@ -73,7 +73,6 @@ export default class Book extends Component {
       <Header />
       <div className="align-center">
           {this.load_data(this.state.data)}
-          <Sidebar />
       </div>
       </div>
     );

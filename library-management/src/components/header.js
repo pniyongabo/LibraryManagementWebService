@@ -3,7 +3,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 import logo from "../assets/Navbar_logo2.svg"
 import "./header.css"
 
-export default class Sidebar extends Component {
+export default class Header extends Component {
     render() {
         return (
             <Navbar bg="dark" expand="lg" variant="dark">

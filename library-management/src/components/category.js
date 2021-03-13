@@ -58,7 +58,6 @@ export default class Category extends Component {
         <div className='align-center'>
               {this.load_data(this.state.data)}
         </div>
-        <Sidebar />
         </div>
     );
   }

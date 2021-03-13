@@ -123,7 +123,6 @@ export default class Authors extends Component {
           </div>
         </div>
 
-        <Sidebar />
       </div>
     );
   }

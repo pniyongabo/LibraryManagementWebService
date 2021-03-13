@@ -104,7 +104,6 @@ export default class Users extends Component {
       <div>
         <Header />   
         <div>{this.create_form()}</div> 
-        <Sidebar />
       </div>
     );
   }
