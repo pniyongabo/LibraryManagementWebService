@@ -6,7 +6,6 @@ import Header from "./header";
 import Books from "./books";
 
 import "./homepage.css";
-
 // require("dotenv").config();
 
 export default class Homepage extends Component {
