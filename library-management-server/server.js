@@ -49,8 +49,6 @@ mongoose
   .catch((e) => {
     console.error("Connection error", e.message);
   });
-const db = mongoose.connection;
-module.exports = db;
 var userData = new mongoose.Schema({
   name: String,
   email: String,
@@ -58,15 +56,52 @@ var userData = new mongoose.Schema({
   checkout_date: Date,
   newsletter: Boolean,
 });
-var User = mongoose.model("User", userData);
-app.post("/api/users/submit", (req, res) => {
-  var myData = new User(req.body);
-  myData
-    .save()
-    .then((item) => {
-      res.send("item saved to database");
+var userModel = mongoose.model("userData", userData);
+module.exports = mongoose.model("userModel", userData);
+
+getUserData = (req, res) => {
+  userModel
+    .find({}, (err, movies) => {
+      if (err) {
+        return res.status(400).json({ success: false, error: err });
+      }
+      if (!movies.length) {
+        return res
+          .status(404)
+          .json({ success: false, error: `Movie not found` });
+      }
+      return res.status(200).json({ success: true, data: movies });
     })
-    .catch((err) => {
-      res.status(400).send("unable to save to database");
+    .catch((err) => console.log(err));
+};
+app.get("/api/checkoutlist", getUserData);
+
+createUser = (req, res) => {
+  var check = false;
+  if (req.body.checkbox) {
+    check = true;
+  }
+  var userDetails = new userModel({
+    name: req.body.name,
+    email: req.body.email,
+    isbn: req.body.isbn,
+    checkout_date: req.body.date,
+    newsletter: check,
+  });
+  userDetails
+    .save()
+    .then(() => {
+      return res.status(201).json({
+        success: true,
+        message: "User created!",
+      });
+    })
+    .catch((error) => {
+      return res.status(400).json({
+        error,
+        message: "User not created!",
+      });
     });
-});
+};
+
+app.post("/api/users/submit", createUser);

@@ -1,0 +1,8 @@
+.header-wrapper {
+  position: relative;
+}
+.header-img {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
