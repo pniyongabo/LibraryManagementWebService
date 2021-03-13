@@ -10,13 +10,13 @@ A library management web service that maintains and organizes a user’s library
 
 ### Tech Stack
 
-This is a MERN (~~MongoDB~~, Express JS, React JS, and Node JS) web service for a library management system.
+This is a MERN (MongoDB, Express JS, React JS, and Node JS) web service for a library management system.
 
 ### Features
 * Show availability: List and browse the books available to checkout from the library.
 * Sorting:  Sort library books based on author, publish date, date added, etc.
 * Grouping: Groups books into user-created lists (e.g. “To-read”).
-* ~~Checkin and Checkout: Allows users to check-in and check-out books from the library.~~
+* Checkin and Checkout: Allows users to check-in and check-out books from the library.
 * Searching:  Search for books in library, searching with fields such as title, author, genre, etc.
   
 
@@ -47,6 +47,8 @@ Below are the libraries that we used when developing this project:
 ### Tutorials
 Below are the Tutorials we referenced when working on this project:
 * https://mdbootstrap.com/docs/react/tables/pagination/
+* https://www.freecodecamp.org/news/deploy-a-react-node-app-to/
+* https://github.com/heroku/heroku-buildpack-nodejs/issues/385
 
 
 
