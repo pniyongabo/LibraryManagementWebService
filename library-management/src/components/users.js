@@ -78,7 +78,8 @@ export default class Users extends Component {
               className="form-check-label"
               htmlFor="checkbox"
               id="newsletter"
-            >Si Sign up for the newsletter
+            >
+              Si Sign up for the newsletter
             </label>
           </div>
           <br />
@@ -102,8 +103,8 @@ export default class Users extends Component {
   render() {
     return (
       <div>
-        <Header />   
-        <div>{this.create_form()}</div> 
+        <Header />
+        <div>{this.create_form()}</div>
       </div>
     );
   }
