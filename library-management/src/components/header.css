@@ -1,5 +1,7 @@
 .textStyle {
     color: white !important;
+    margin-right:40px;
+    font-size:20px;
 }
 
 .sticky_nav{
