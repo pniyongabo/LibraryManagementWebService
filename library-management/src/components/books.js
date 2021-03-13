@@ -135,7 +135,6 @@ export default class Books extends Component {
             <MDBDataTable striped bordered responsive data={this.state.books} className='your-custom-styles' />
           </div>
         </div>
-        <Sidebar />
       </div>
     );
   }
