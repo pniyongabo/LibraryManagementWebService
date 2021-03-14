@@ -4,6 +4,8 @@ import Header from './header';
 
 import './book.css';
 
+import { Container, Row, Col, Card } from 'react-bootstrap';
+
 export default class Book extends Component {
   
   constructor(props) {
@@ -17,6 +19,10 @@ export default class Book extends Component {
     this.getBookDetails(this.props.match.params.isbn)
       .then(res => this.setState({ 
         bookDetails: res,
+        /*
+        title: this.props.match.params.title,
+        author: this.props.match.params.author,
+        */
         isbn: this.props.match.params.isbn,
         isLoaded: true
       }))
@@ -46,6 +52,7 @@ export default class Book extends Component {
       //     <p>{this.state.bookDetails}</p>
       //   </div>
       // </div>
+      /*
       <div class="container">
         <div class="container-a">
             <img class="book-cover" src={bookCover} alt={bookCoverALT}/>
@@ -54,6 +61,19 @@ export default class Book extends Component {
             <p>{this.state.bookDetails}</p>
         </div>
     </div>
+    */
+        <Container>
+            <Row>
+                <Col sm={5}><img class="book-cover" src={bookCover} alt={bookCoverALT}/> </Col>
+                <Col sm={1}></Col>
+                <Col sm={6}> 
+                    <Row>
+                        <h1 className="desTitle">Description</h1>
+                        <p className="detail">{this.state.bookDetails}</p>
+                    </Row>
+                </Col>
+            </Row>
+        </Container>
        )
   }
     
