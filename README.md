@@ -51,6 +51,7 @@ Below are the Tutorials we referenced when working on this project:
 * https://www.freecodecamp.org/news/deploy-a-react-node-app-to/
 * https://github.com/heroku/heroku-buildpack-nodejs/issues/385
 * https://www.npmjs.com/package/nuka-carousel
+* https://openlibrary.org/dev/docs/api/books
 
 
 
