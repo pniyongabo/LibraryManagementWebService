@@ -3,5 +3,9 @@
   "version": "0.1.0",
   "scripts": {
     "postinstall": "npm install --prefix library-management-server && npm install --prefix library-management"
+  },
+  "dependencies": {
+    "nuka-carousel": "^4.7.5",
+    "rc-banner-anim": "^2.4.5"
   }
 }

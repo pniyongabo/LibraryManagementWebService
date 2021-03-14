@@ -11,7 +11,7 @@ import ulogo from "../assets/user.png"
 export default class Header extends Component {
     render() {
         return (
-            <Navbar bg="dark" expand="lg" variant="dark" className="sticky_nav">
+            <Navbar bg="dark" expand="md" variant="dark" className="sticky_nav">
                 <Navbar.Brand href="/" className="textStyle">
                     <img
                         alt="Library logo"
