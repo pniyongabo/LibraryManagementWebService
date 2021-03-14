@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Tab, Tabs, Row} from "react-bootstrap";
+import { Figure, Tab, Tabs } from "react-bootstrap";
 
 import Sidebar from "./sidebar";
 import Header from "./header";
